@@ -1,0 +1,7 @@
+{
+    "name"              : "localalma",
+    "dockerComposeFile" : "./slurm-cluster/docker-compose-jupyter.yml",
+    "service"           : "slurmmaster",
+    "workspaceFolder"   : "/home/admin",
+    "shutdownAction"    : "stopCompose"
+}
