@@ -69,4 +69,8 @@ Executing for 15 secs
 Process finished 2025-09-24 08:35:55.315433
 ```
 
+# Local build
 
+```bash
+docker compose -f docker-compose-jupyter.yml
+```
