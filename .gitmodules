@@ -1,0 +1,6 @@
+[submodule ".devcontainer/slurm-cluster"]
+	path = .devcontainer/slurm-cluster
+	url = https://github.com/rancavil/slurm-cluster
+[submodule "nf-hello-world"]
+	path = nf-hello-world
+	url = git@github.com:seqeralabs/nf-hello-world.git
