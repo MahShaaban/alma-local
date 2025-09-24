@@ -91,3 +91,22 @@ $ module load bcftools/1.0
 $ bcftools -v
 bcftools 1.10.2
 ```
+
+# Nextflow
+
+```console
+$ nextflow run nf-hello-world/main.nf -profile demo --outdir output
+N E X T F L O W   ~  version 25.09.0-beta
+Launching `nf-hello-world/main.nf` [hopeful_mcclintock] DSL2 - revision: fd9eeb4ff7
+executor >  local (6)
+[ce/eb6f79] sayHello (3)       | 3 of 3 ✔
+[68/800364] convertToUpper (1) | 3 of 3 ✔
+
+
+$ nextflow run nf-hello-world/main.nf -profile cluster --outdir output 
+N E X T F L O W   ~  version 25.09.0-beta
+Launching `nf-hello-world/main.nf` [jolly_fourier] DSL2 - revision: fd9eeb4ff7
+executor >  slurm (6)
+[af/5961f9] sayHello (1)       | 3 of 3 ✔
+[2c/35e617] convertToUpper (3) | 3 of 3 ✔
+```
