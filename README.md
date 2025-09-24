@@ -2,7 +2,7 @@ TODO:
 
 - [X] Implement slurm cluster
 - [X] Shared volumns
-- [ ] Add modules
+- [X] Add modules
 - [ ] Replicate environment: Volumns and variables
 
 # Test
@@ -73,4 +73,21 @@ Process finished 2025-09-24 08:35:55.315433
 
 ```bash
 docker compose -f docker-compose-jupyter.yml
+```
+
+# Modules
+
+In the `slurmmaster` sell, `module load <module>` is possible
+
+```console
+admin@slurmmaster:~$ module avail 
+---------- /etc/modulefiles -----------
+bcftools/1.10.2  dot  module-git  module-info  modules  null  use.own
+
+Key:
+modulepath  
+$ module load bcftools/1.0 
+
+$ bcftools -v
+bcftools 1.10.2
 ```
